@@ -8,7 +8,7 @@ $(window).bind('mousewheel', function(event) {
     }
     var font_size = 50;
     var top = number * 5;
-    $("#content").css({ top: top });
+    $("#content").css({ top: window.innerHeight/2 });
     $("#content").css({ 'font-size': font_size*Math.sin(3.14*top/window.innerHeight)})
-    $("#number").text(Math.round(top/window.innerHeight * 100) + "%");
+    $("#number").text("hi")
 });

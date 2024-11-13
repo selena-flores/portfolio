@@ -6,6 +6,7 @@ body{
     padding:0; 
     margin:0; 
     background-color: #09143C;
+    /* overflow: hidden; */
 }
 
 img{
@@ -31,4 +32,15 @@ img{
     width: 100%;
     height: 100%;
     border: none;
+  }
+
+
+  #content{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
   }

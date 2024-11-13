@@ -8,10 +8,14 @@ body{
     background-color: #09143C;
     /* overflow: hidden; */
 }
+.center{
+  text-align: center;
+}
 
 img{
-    margin: 0 0% 0 0%;
-    padding: 0;
+  max-width: 800px;
+  padding: none;
+  margin: auto;
 }
 
 .container {

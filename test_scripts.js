@@ -4,7 +4,7 @@ $(document).ready(function () {
   var dataText = [
     "the search is finally over. . .",
     "i’m selena",
-    "specialist in people and technology",
+    "i'm a specialist in people and technology",
     "let’s build something together.",
   ];
   function typeWriter(text, i, fnCallback) {

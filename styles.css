@@ -3,6 +3,9 @@ body {
   margin: auto;
   background-color: black;
 }
+#begin{
+  display: none;
+}
 
 .main_container {
   background-color: rgba(.2,.2,.2,.9);
@@ -11,8 +14,21 @@ body {
   font-family: monospace;
   font-size: 32px;
   color: white;
-  position: relative;
 }
+
+#begin{
+  position: relative;
+  margin-top: 10%;
+}
+
+#hello{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 90%;
+  font-size: 32px;
+}
+
 
 a {
   color: pink;

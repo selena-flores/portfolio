@@ -2,9 +2,9 @@ $(document).ready(function () {
 
   // var dataText = ['I find myself enjoying work with the optimists, do you? Email me at netusersel@gmail.com to grab a cup of coffee anywhere in Portland or virtually. Let’s build something.'];
   var dataText = [
-    // "the search is finally over. . .",
-    // "i’m selena",
-    // "specialist in people and technology",
+    "the search is finally over. . .",
+    "i’m selena",
+    "specialist in people and technology",
     "let’s build something together.",
   ];
   function typeWriter(text, i, fnCallback) {

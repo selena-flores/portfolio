@@ -1,15 +1,16 @@
 body {
   padding: none;
   margin: auto;
-  background-color: #09143C;
+  background-color: black;
 }
 
 .main_container {
-  background-color: gray;
+  background-color: rgba(.2,.2,.2,.9);
   padding: none;
   margin: auto;
   font-family: monospace;
   font-size: 32px;
+  color: white;
   position: relative;
 }
 
@@ -18,7 +19,7 @@ a {
 }
 
 .row {
-  display: flex; /* equal height of the children */
+  display: flex;
   padding: 0% 10% 0% 10%;
 }
 
@@ -33,6 +34,12 @@ a {
   bottom: 0;
 }
 
+#face{
+  background-image: url("assets/bg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;}
+
 .text_container {
   padding: 5% 10% 5% 10%;
   position: relative;
@@ -45,8 +52,7 @@ a {
 
 img {
   max-width: 800px;
-  margin: auto;
-  text-align: center;
+  padding: none;
 }
 
 .container {

@@ -1,11 +1,9 @@
 $(document).ready(function () {
-
   // var dataText = ['I find myself enjoying work with the optimists, do you? Email me at netusersel@gmail.com to grab a cup of coffee anywhere in Portland or virtually. Let’s build something.'];
   var dataText = [
-    "the search is finally over. . .",
     "i’m selena",
-    "i'm a specialist in people and technology",
-    "let’s build something together.",
+    // "a specialist in people and technology",
+    // "let’s build something together.",
   ];
   function typeWriter(text, i, fnCallback) {
     if (i < text.length) {
@@ -21,15 +19,16 @@ $(document).ready(function () {
   }
   function StartTextAnimation(i) {
     if (typeof dataText[i] == "undefined") {
-      // setTimeout(function () {
-      //   StartTextAnimation(0);
-      // }, 20000);
-      $("#hello").animate({
-        top: "0%",
-        left: "10%",
-        }, 1000, function() {
-        $("#begin").fadeIn(1200);
-      });
+      $("#hello").animate(
+        {
+          top: "0%",
+        },
+        1000,
+        function () {
+          $("#begin").css({ marginTop: $("#hello")[0].offsetHeight });
+          $("#begin").fadeIn(1200);
+        }
+      );
     }
     if (i < dataText.length) {
       typeWriter(dataText[i], 0, function () {
@@ -65,5 +64,4 @@ $(document).ready(function () {
     div += "</div>";
   }
   $("#gallery").html(div);
-
 });

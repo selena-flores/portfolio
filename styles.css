@@ -3,6 +3,7 @@ body {
   margin: auto;
   background-color: black;
 }
+
 #begin{
   display: none;
 }
@@ -18,17 +19,15 @@ body {
 
 #begin{
   position: relative;
-  margin-top: 10%;
 }
 
 #hello{
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 25%;
+  left: 5%;
   width: 90%;
-  font-size: 32px;
+  font-size: 48px;
 }
-
 
 a {
   color: pink;
@@ -47,14 +46,17 @@ a {
 .bottom-align{
   position: absolute;
   width: 80%;
-  bottom: 0;
+  padding: none;
+  margin: auto;
+  bottom: 0%;
 }
 
 #face{
   background-image: url("assets/bg.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;}
+  background-position: center;
+}
 
 .text_container {
   padding: 5% 10% 5% 10%;

@@ -2,17 +2,32 @@ body {
   padding: none;
   margin: auto;
   background-color: black;
+  overflow-anchor: none !important;
+
 }
 
 .skill_button {
-  background-color: rgb(255, 0, 234); /* Green */
-  /* border: none; */
+  background-color: rgba(0, 0, 0, 0);
+  /* Green */
   color: white;
-  margin: 2% 10% 2% 10%;
+  margin: 0 20% 0 20%;
+  padding: 2% 10% 2% 10%;
+  width: 60%;
   text-align: center;
   display: inline-block;
   font-size: 16px;
 }
+
+.exit_button {
+  background-color: rgb(255, 0, 157);
+  /* Green */
+  color: white;
+  margin: 2% 10% 2% 10%;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+
 #begin {
   display: none;
 }
@@ -44,13 +59,13 @@ a {
 
 .row {
   display: flex;
-  padding: 0% 10% 0% 10%;
+  justify-content: space-evenly;
 }
 
 .col {
   flex: 1;
-  /* additionally, equal width */
   position: relative;
+  justify-content: space-evenly;
 }
 
 .bottom-align {

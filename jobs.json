@@ -1,0 +1,19 @@
+{
+    "bartender": ["Bartender", "description"],
+    "tle_sales": ["Sales Team Member", "description"],
+    "buyer": ["Buyer", "description"],
+    "eijc_chair": ["Equity, Inclusion, & Jusice Committee Chair", "description"],
+    "sound_engineer": ["Sound Engineer", "description"],
+    "ta_intro_cs": ["TA, Introduction to C", "description"],
+    "uf_lead": ["United Front Communication Lead", "description"],
+    "eijc_vice": ["Equity, Inclusion, & Justice Comittee Vice Chair", "description"],
+    "platteau_manager": ["Pleattea Student Art Center Manager & Treasurer", "description"],
+    "lead_backend_engineer_intern": ["Lead Backend Engineer Intern", "description"],
+    "back_end_dev": ["Backend Engineer", "description"],
+    "ta_dm_art_lab": ["TA, Digital Media Art", "description"],
+    "vgl_intern": ["Vision & Graphics Lab Intern", "description"],
+    "full_stack_dev": ["Full Stack Development", "description"],
+    "rendering_engine_dev": ["Rendering Engine Development", "description"],
+    "math_sim": ["Mathematical Simulation", "description"],
+    "classwork": ["Classwork", "description"]
+}

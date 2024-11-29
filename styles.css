@@ -4,12 +4,21 @@ body {
   background-color: black;
 }
 
-#begin{
+.skill_button {
+  background-color: rgb(255, 0, 234); /* Green */
+  /* border: none; */
+  color: white;
+  margin: 2% 10% 2% 10%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+#begin {
   display: none;
 }
 
 .main_container {
-  background-color: rgba(.2,.2,.2,.9);
+  background-color: rgba(.2, .2, .2, .9);
   padding: none;
   margin: auto;
   font-family: monospace;
@@ -17,11 +26,11 @@ body {
   color: white;
 }
 
-#begin{
+#begin {
   position: relative;
 }
 
-#hello{
+#hello {
   position: absolute;
   top: 25%;
   left: 5%;
@@ -39,11 +48,12 @@ a {
 }
 
 .col {
-  flex: 1; /* additionally, equal width */
+  flex: 1;
+  /* additionally, equal width */
   position: relative;
 }
 
-.bottom-align{
+.bottom-align {
   position: absolute;
   width: 80%;
   padding: none;
@@ -51,7 +61,7 @@ a {
   bottom: 0%;
 }
 
-#face{
+#face {
   background-image: url("assets/bg.gif");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +74,7 @@ a {
   text-align: left;
 }
 
-.center{
+.center {
   text-align: center;
 }
 

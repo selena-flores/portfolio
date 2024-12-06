@@ -197,6 +197,9 @@ $(document).ready(function () {
             (k / num_roles) * 255 +
             ', 100, 100);" class="col">';
           html += skills[id].roles[k][0];
+          console.log(skills[id].roles[k][0]);
+          html +=
+            '<button class="text_container" id="'+k+'">Reveal</button><span id="hidden_span_'+k+'" style="display: none;">'+skills[id].roles[k][1]+'</span>';
           k++;
         } else {
           html += '<div class="col">';
@@ -211,6 +214,21 @@ $(document).ready(function () {
     $("#roles").html(html);
     $("#skills").fadeOut();
     $("#roles").fadeIn();
+    $("#reveal_button").click(function () {
+      if ($("#hidden_span").is(":visible")) {
+        $("#hidden_span").fadeOut();
+      } else {
+        $("#hidden_span").fadeIn();
+      }
+    });
+  }
+
+  function display_description(id){
+      if ($("#hidden_span_"+id).is(":visible")) {
+        $("#hidden_span_"+id).fadeOut();
+      } else {
+        $("#hidden_span_"+id).fadeIn();
+      }
   }
   $(document).on("click", "button", function () {
     if ($("#skills").is(":visible")) {
@@ -218,6 +236,8 @@ $(document).ready(function () {
     } else if (this.id == "exit") {
       $("#skills").fadeIn();
       $("#roles").fadeOut();
+    }else{
+      display_description(this.id);
     }
   });
 });

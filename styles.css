@@ -30,6 +30,7 @@ body {
 
 #begin {
   display: none;
+  width: 80vw;
 }
 
 .main_container {
@@ -81,6 +82,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: none;
+  margin: auto;
 }
 
 .text_container {

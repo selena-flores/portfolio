@@ -1,9 +1,8 @@
 $(document).ready(function () {
-  // var dataText = ['I find myself enjoying work with the optimists, do you? Email me at netusersel@gmail.com to grab a cup of coffee anywhere in Portland or virtually. Let’s build something.'];
   var dataText = [
-    "i'm selena",
-    "a people & technology specialist",
-    "let's build something together.",
+    // "i'm selena",
+    // "a people & technology specialist",
+    // "let's build something together.",
   ];
   function typeWriter(text, i, fnCallback) {
     if (i < text.length) {
@@ -41,27 +40,32 @@ $(document).ready(function () {
   gallery = [
     ["heat equation simulation", "heat_equation_animation.gif"],
     ["spherical harmonics", "spherical_harmonics.gif"],
+    ["wave equation", "wave.gif"],
     ["hybrid rendering engine", "hybrid.gif"],
     ["ray marcher", "ray_march.gif"],
     ["3D recursive tree", "tree.gif"],
-    ["wave equation", "wave.gif"],
   ];
   div = "";
-  for (i = 0; i < gallery.length; i += 2) {
+  for (i = 0; i < gallery.length; i += 3) {
     div += '<div class="row">';
-    for (j = 0; j < 2; j++) {
+    for (j = 0; j < 3; j++) {
       div += '<div class="col">' + gallery[i + j][0] + "</div>";
     }
     div += "</div>";
 
     div += '<div class="row">';
-    for (j = 0; j < 2; j++) {
+    for (j = 0; j < 3; j++) {
       div +=
         '<div class="col"><img loading="lazy" width="90%" src="assets/' +
         gallery[i + j][1] +
         '"></div>';
     }
-    div += "</div>";
+    div += "</div><br><br><br><br>";
   }
   $("#gallery").html(div);
+    $.getJSON('outro.json', function(jd) {
+       $('#titles').html(jd.titles);
+       $('#research').html(jd.research);
+       $('#endeavors').html(jd.endeavors);
+ });  
 });

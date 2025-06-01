@@ -1,8 +1,8 @@
 $(document).ready(function () {
   var dataText = [
-    // "i'm selena",
-    // "a people & technology specialist",
-    // "let's build something together.",
+    "i'm selena",
+    "a people & technology specialist",
+    "let's build something together.",
   ];
   function typeWriter(text, i, fnCallback) {
     if (i < text.length) {
